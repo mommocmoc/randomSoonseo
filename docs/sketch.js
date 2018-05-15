@@ -4,6 +4,7 @@ var preS = 0 ;
 var curS ;
 var group = ['알러지','피로도최고조','이러지말아조','구조조정','함께하조','LUV.I','ㅌㄷㅌㄷ','내 일상을 돌려조','멸치','배지영조','혜밀리','JEK','예쓰조','로맨스가 필요해','힉힉'];
 var resultGroup =[];
+var trigger = true;
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	print(group);
