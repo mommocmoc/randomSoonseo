@@ -44,11 +44,14 @@ function windowResized() {
 }
 
 function keyPressed(){
+	if(trigger){
 	resultGroup = Shuffle(resultGroup);
 	background(255);
+	trigger = false;
 	for(var i = 0; i<group.length ; i++ ){
 		textSize(20);
 		textAlign(LEFT);
 		text(i+1+'. '+resultGroup[i],50+20*i,30+20*i);
 	}
+}
 }
